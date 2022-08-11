@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>demo01</title>
+      <style>
+        .bg{
+          color: red;
+        }
+      </style>
+      <script src="https://cdn.staticfile.org/vue/3.2.36/vue.global.min.js"></script>
+  </head>
+  <body>
+      <div id="app" class="bg">
+        {{msg}}
+      </div>
+      <script>
+        const v = {
+          data() {
+            return {
+              msg:"hello vue3"
+            }
+          }
+        }
+        Vue.createApp(v).mount('#app')
+      </script>
+  </body>
+</html>
+
+
